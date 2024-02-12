@@ -1,27 +1,33 @@
 # FoodApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.6.
+App Food is a variety of dishes application, having CRUD functions like Create, Edit and Delete.
 
-## Development server
+## Project status
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Complete.
 
-## Code scaffolding
+## :hammer:Project functionalities
+1. Create a new dish.
+![image](https://github.com/kristel8/food-app/assets/44558223/932f0515-4184-49e0-ba88-ff3358f07a41)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2. Edit a dish.
+![image](https://github.com/kristel8/food-app/assets/44558223/6b81f4c6-5859-445b-9f9f-bf67a359bf28)
 
-## Build
+3. Delete a plate.
+![image](https://github.com/kristel8/food-app/assets/44558223/00b35dae-3ae9-4fd2-82f9-32c075ae42d4)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+4. Update data.
 
-## Running unit tests
+## Start the project
+Clone the remote repository to have a copy on your own computer.
+Repository: https://github.com/kristel8/food-app.git
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Used technology
+- This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.6.
+- UI Angular Material.
+- Responsive design, it is adaptable to any device.
+- The spponacular API was used (https://spoonacular.com/food-api)
+- Validations with reactive forms were included and the data obtained is maintained in the localStorage.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Author
+Kristel Munayco (https://github.com/kristel8)

@@ -1,5 +1,5 @@
 .main__card-list {
-  width: 80%;
+  width: 60%;
   display: grid;
   margin: 2em auto;
   grid-template-columns: repeat(3, 1fr);

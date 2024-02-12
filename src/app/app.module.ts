@@ -8,6 +8,7 @@ import { SharedModule } from './shared/shared.module';
 import { FoodCardComponent } from './ui/partials/food-card/food-card.component';
 import { FoodFormComponent } from './ui/views/food-form/food-form.component';
 import { FoodListComponent } from './ui/views/food-list/food-list.component';
+import { ConfirmationDialogComponent } from './ui/partials/confirmation-dialog/confirmation-dialog.component';
 
 const routes: Routes = [{ path: '', component: FoodListComponent }];
 
@@ -17,6 +18,7 @@ const routes: Routes = [{ path: '', component: FoodListComponent }];
     FoodListComponent,
     FoodCardComponent,
     FoodFormComponent,
+    ConfirmationDialogComponent,
   ],
   imports: [
     BrowserModule,
