@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+  <span>Food App</span>
+</mat-toolbar>
+<section class="main__buttons">
+  <button mat-fab extended (click)="createItem()">
+    <mat-icon>add</mat-icon>
+    Nueva comida
+  </button>
+  <button mat-fab extended (click)="updateList()">
+    <mat-icon>update</mat-icon>
+    Actualizar
+  </button>
+</section>
+<section class="main__card-list">
+  <app-food-card *ngFor="let food of (foods$ | async)" [data]="food" (updateEvent)="updateItem($event)"
+    (deleteEvent)="deleteItem($event)"></app-food-card>
+</section>

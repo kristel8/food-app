@@ -1,0 +1,41 @@
+<h1 mat-dialog-title>{{ titleForm }}</h1>
+<form [formGroup]="form" (ngSubmit)="saveItem()">
+  <div mat-dialog-content class="food-form__content">
+    <img src="{{image}}" alt="" class="food-form__image">
+    <div class="food-form__search">
+      <mat-form-field class="full-width-field">
+        <mat-label>Imagen</mat-label>
+        <input matInput formControlName="image" />
+        <mat-error *ngIf="imageCtrl.hasError('required')">
+          El campo <strong>es obligatorio</strong>
+        </mat-error>
+      </mat-form-field>
+      <button mat-mini-fab color="primary" type="button" (click)="uploadImage()">
+        <mat-icon>search</mat-icon>
+      </button>
+    </div>
+    <div class="food-form__input">
+      <mat-form-field class="full-width-field">
+        <mat-label>Titulo</mat-label>
+        <input matInput formControlName="title" />
+        <mat-error *ngIf="titleCtrl.hasError('required')">
+          El campo <strong>es obligatorio</strong>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Precio</mat-label>
+        <span matPrefix>$ &nbsp;</span>
+        <input matInput type="number" formControlName="price" placeholder="0.00" />
+        <mat-error *ngIf="priceCtrl.hasError('required')">
+          El campo <strong>es obligatorio</strong>
+        </mat-error>
+      </mat-form-field>
+    </div>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button color="warn" type="button" (click)="closeDialog()">Cancelar</button>
+    <button mat-stroked-button color="primary" type="submit" cdkFocusInitial>
+      Guardar
+    </button>
+  </div>
+</form>

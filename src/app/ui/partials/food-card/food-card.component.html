@@ -1,0 +1,11 @@
+<mat-card class="card">
+  <img mat-card-image src="{{ data.image }}" alt="Photo of {{ data.title }}" class="image-food">
+  <mat-card-content>
+    <h2>{{ data.title }}</h2>
+    <h1>{{ data.price | currency }}</h1>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="updateItem(data.id)">EDITAR</button>
+    <button mat-button (click)="deleteItem(data.id)">ELIMINAR</button>
+  </mat-card-actions>
+</mat-card>

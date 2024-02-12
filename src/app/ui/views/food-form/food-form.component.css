@@ -1,0 +1,32 @@
+.food-form__content {
+  display: grid;
+  row-gap: 10px;
+  justify-items: center;
+}
+
+.food-form__image {
+  max-width: 40%;
+}
+
+.food-form__search,
+.food-form__input {
+  width: 100%;
+  display: flex;
+  column-gap: 10px;
+  align-items: baseline;
+}
+
+@media (max-width: 600px) {
+  .food-form__input {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.mat-mdc-dialog-actions {
+  justify-content: end;
+}
